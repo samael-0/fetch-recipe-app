@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Riot";
+}
+
+body {
+  background-color: #323232;
+  color: #fff;
+}
+
+header nav {
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+header nav h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header nav form {
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+form input[type="text"],
+button[type="submit"] {
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"] {
+  background-color: violet;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: pink;
+}
+
+/* recipiecontainer */
+.recipie-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* responsive code */
+@media screen and (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav form {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
