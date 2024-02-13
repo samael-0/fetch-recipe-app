@@ -53,12 +53,79 @@ form button[type="submit"]:hover {
   background-color: pink;
 }
 
-/* recipiecontainer */
+/* main section ,recipiecontainer */
 .recipie-container {
   text-align: center;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-end: 4;
+  grid-gap: 40px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  place-items: center;
 }
 
+.recipie {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(red, green, blue, alpha);
+  cursor: pointer;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.recipie img {
+  height: 300px;
+}
+
+.recipie h3 {
+  font-size: 24px;
+  margin-block: 5px;
+}
+
+.recipie p {
+  font-size: 20px;
+  color: #323232;
+  margin: 5px 0;
+}
+
+.recipie h3:hover {
+  text-decoration: underline;
+}
+.recipie span {
+  font-weight: 600;
+}
+.recipie button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 18px auto;
+  background-color: violet;
+  border: none;
+}
+
+.recipie-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #323232;
+  -webkit-transform: translate(-50%, -50%);
+  border-radius: 12px;
+  width: 40%;
+  height: 60%;
+  font-size: 20px;
+  padding: 20px;
+  overflow-y: scroll;
+}
 /* responsive code */
 @media screen and (max-width: 600px) {
   header nav {
